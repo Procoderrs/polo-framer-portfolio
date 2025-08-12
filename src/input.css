@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+
+@keyframes shoot {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(80vw, 80vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.shoot {
+  animation: shoot 7.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes zoomOnce {
+  0% {
+    transform: scale(1) ; /* 👈 shift video down initially */
+  }
+  100% {
+    transform: scale(1.7) translateY(0px); /* 👈 zoom in and move upward to original position */
+  }
+}
+
+.zoom-once {
+  animation: zoomOnce  ease-in-out forwards;
+}
+
+/* Bounce forward */
+@keyframes bounce-twice {
+    0% {
+        transform: translateY(0);
+    }
+ 
+    60% {
+        transform: translateY(-100%);
+    }
+ 
+    61% {
+        transform: translateY(100%);
+    }
+ 
+    100% {
+        transform: translateY(0);
+    }
+}
+ 
+/* Bounce reverse */
+@keyframes bounce-twice-reverse {
+    0% {
+        transform: translateY(0);
+    }
+ 
+    60% {
+        transform: translateY(100%);
+    }
+ 
+    61% {
+        transform: translateY(-100%);
+    }
+ 
+    100% {
+        transform: translateY(0);
+    }
+}
+ 
+.icon-svg {
+    transition: transform 0.3s ease;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+ 
+/* Add class to trigger forward */
+.icon-svg.bounce {
+    animation-name: bounce-twice;
+}
+ 
+/* Add class to trigger reverse */
+.icon-svg.bounce-reverse {
+    animation-name: bounce-twice-reverse;
+}
+
+ #mouse-circle {
+      pointer-events: none; /* so it doesn't block clicks*/ 
+      z-index: 50; /* on top of everything */
+      
+      
+    }
+    
+
+    
+
+    
+ 
+@theme{
+
+
+/* breakpoints */
+
+--breakpoint-small:23.438rem; /* 375px */
+--breakpoint-425:26.563rem; /* 425 */
+--breakpoint-1300px:81.25rem; /* 1300px */
+
+
+
+
+
+  --font-display:"Inter","sans-serif";
+  --font-heading:'Satoshi','sans-serif';
+  --font-para:"Plus Jakarta Sans", 'sans-serif';
+  --color-bg-graphic-div:rgba(17,17,17);
+  ---color-first-heading:#ffff;
+  --color-heading-1:#ffffff99;
+  --color-btn-bg:linear-gradient(180deg, rgb(120, 120, 120), rgb(8, 8, 8));
+  --color-btn:#080808;
+  --leading-tight:100.4px;
+  --tracking-tightest:-2px;
+}
+
+/*  @font-face {
+    font-family: 'Satoshi Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Satoshi Regular'), url('Satoshi-Regular.woff') format('woff');
+    }
+    
+
+ */
+
+/* @font-face {
+    font-family: 'Satoshi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Satoshi Bold'), url('Satoshi-Bold.woff') format('woff');
+    } */
+    
+
+    @keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px); /* minimal upward movement */
+  }
+}
+.animate-up-down {
+  animation: upDown 2.5s ease-in-out infinite;
+}
+
+
+
+
+ @keyframes Downup {
+  0%, 100% {
+    transform: translateY(-18px);
+  }
+  50% {
+    transform: translateY(0px); /* minimal upward movement */
+  }
+}
+.animate-down-up {
+  animation: Downup 2.5s ease-in-out infinite;
+}
