@@ -18,10 +18,10 @@
 
 @keyframes zoomOnce {
   0% {
-    transform: scale(1) ; /* 👈 shift video down initially */
+    transform: scale(0.2) ; /* 👈 shift video down initially */
   }
   100% {
-    transform: scale(1.7) translateY(0px); /* 👈 zoom in and move upward to original position */
+    transform: scale(1) translateY(0px); /* 👈 zoom in and move upward to original position */
   }
 }
 
