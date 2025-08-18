@@ -103,15 +103,18 @@
 
 --breakpoint-small:23.438rem; /* 375px */
 --breakpoint-425:26.563rem; /* 425 */
+--breakpoint-before-lg:56.875rem; /* 910px */
 --breakpoint-1300px:81.25rem; /* 1300px */
 
 
 
 
-
+/* font-family-variables */
   --font-display:"Inter","sans-serif";
   --font-heading:'Satoshi','sans-serif';
   --font-para:"Plus Jakarta Sans", 'sans-serif';
+
+  /* color */
   --color-bg-graphic-div:rgba(17,17,17);
   ---color-first-heading:#ffff;
   --color-heading-1:#ffffff99;
