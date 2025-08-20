@@ -15,6 +15,12 @@
   </style>
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" href="./src/output.css" />
   <link rel="stylesheet" href="./src/input.css" />
   <title>Hero Section with Video</title>
@@ -104,7 +110,7 @@
       </nav>
     </div>
   </header>
-<!-- ✅ Navbar-end  -->
+  <!-- ✅ Navbar-end  -->
 
   <!-- 🌟Main-content   before-h-screen-video-fix -->
   <section class="relative h-full w-full flex justify-start items-center text-white overflow-hidden">
@@ -113,504 +119,900 @@
     <video src="./src/assets/video/video.mp4" autoplay muted loop playsinline
       class="absolute inset-0 w-full h-full object-cover  grayscale-[1]  -z-[1]">
     </video>
- <!-- 🎥 Background Video-end -->
+    <!-- 🎥 Background Video-end -->
 
 
     <!-- 🖤 Dark Overlay -->
-    <div class="absolute inset-0 bg-black/70 z-0"></div>
-<!-- 🖤 Dark Overlay-end -->
+    <div class="absolute inset-0 bg-black/80 z-0"></div>
+    <!-- 🖤 Dark Overlay-end -->
 
     <!-- 🌟 Content -->
 
     <!--  -->
     <div id="sky" class="  ">
       <!-- bannner-start -->
-     <div class="px-4 md:px-12 pt-32 z-20 
+      <div class="px-4 md:px-12 pt-32 z-20 
             grid grid-cols-1 1300px:grid-cols-[auto_1fr] 
             1300px:gap-x-12
             pb-8 max-w-[1200px] mx-auto w-full">
 
-  <!-- Column 1 -->
-  <div class="relative flex flex-col gap-5">
+        <!-- Column 1 -->
+        <div class="relative flex flex-col gap-5">
 
-    <!-- Tag -->
-    <div class="flex w-fit items-center gap-2 rounded-full bg-bg-graphic-div py-2 px-4 shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
-      <div class="w-4 h-4 border-2 border-white rounded-full flex items-center justify-center">
-        <div class="w-2 h-2 bg-white rounded-full"></div>
-      </div>
-      <span class="text-sm font-display">UI/UX & Graphic Designer</span>
-    </div>
+          <!-- Tag -->
+          <div
+            class="flex w-fit items-center gap-2 rounded-full bg-bg-graphic-div py-2 px-4 shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
+            <div class="w-4 h-4 border-2 border-white rounded-full flex items-center justify-center">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+            </div>
+            <span class="text-sm font-display">UI/UX & Graphic Designer</span>
+          </div>
 
-    <!-- Heading -->
-    <div class="flex gap-5 items-center">
-      <h1 class="small:pt-4 md:text-[100px] 1300px:text-[72px] text-[55px] small:text-[65px] 425:text-[72px] text-nowrap font-heading leading-tight tracking-tightest">
-        <span>Johan</span> <span class="text-heading-1">Beker</span>
-      </h1>
+          <!-- Heading -->
+          <div class="flex gap-5 items-center">
+            <h1
+              class="small:pt-4 md:text-[100px] 1300px:text-[72px] text-[55px] small:text-[65px] 425:text-[72px] text-nowrap font-heading leading-tight tracking-tightest">
+              <span>Johan</span> <span class="text-heading-1">Beker</span>
+            </h1>
 
-      <div class="relative group hidden md:block">
-        <button class="icon-container transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-4 items-center justify-center rounded-full shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
-          <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
-            <path fill="none" d="M0 0h24v24H0z"></path>
-            <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
-          </svg>
-        </button>
-        <span class="absolute left-2/2 -translate-x-1/2 -rotate-[40deg] top-10 mt-2 text-sm text-heading-1 px-3 p-1 rounded shadow opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-          ( about me )
-        </span>
-      </div>
-    </div>
+            <div class="relative group hidden md:block">
+              <button
+                class="icon-container transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-4 items-center justify-center rounded-full shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
+                <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  width="36" height="36" fill="currentColor">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                  </path>
+                </svg>
+              </button>
+              <span
+                class="absolute left-2/2 -translate-x-1/2 -rotate-[40deg] top-10 mt-2 text-sm text-heading-1 px-3 p-1 rounded shadow opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                ( about me )
+              </span>
+            </div>
+          </div>
 
-    <!-- Paragraph -->
-    <p class="text-heading-1 max-w-[480px] md:text-base text-sm leading-[30px] font-para">
-      I'm a versatile designer specializing in graphic, web and product design to help grow your business. Let's build something great!
-    </p>
+          <!-- Paragraph -->
+          <p class="text-heading-1 max-w-[480px] md:text-base text-sm leading-[30px] font-para">
+            I'm a versatile designer specializing in graphic, web and product design to help grow your business. Let's
+            build something great!
+          </p>
 
-    <!-- Buttons -->
-    <div class="mt-4 flex small:items-start flex-col md:flex-row gap-5">
-      <a href="/" class="rounded-[100px] font-medium md:py-[13px] md:px-[26px] px-20 py-4 text-white font-para
+          <!-- Buttons -->
+          <div class="mt-4 flex small:items-start flex-col md:flex-row gap-5">
+            <a href="/" class="rounded-[100px] font-medium md:py-[13px] md:px-[26px] px-20 py-4 text-white font-para
          [background:linear-gradient(180deg,rgb(120,120,120)_-200%,rgb(8,8,8)_100%)]
          shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
-        See All Projects
-      </a>
+              See All Projects
+            </a>
 
-      <a href="/" class="rounded-[100px] md:px-[26px] px-20 py-4 font-medium md:py-[13px] font-para text-btn
+            <a href="/" class="rounded-[100px] md:px-[26px] px-20 py-4 font-medium md:py-[13px] font-para text-btn
          [background:linear-gradient(180deg,rgb(255,255,255)_0%,rgb(120,120,120)_140%)]
          bg-[length:100%_100%] hover:bg-[length:100%_240%]
          transition-all duration-500 ease-in-out">
-        Contact now
-      </a>
-    </div>
-  </div>
+              Contact now
+            </a>
+          </div>
+        </div>
 
-  <!-- Column 2 (rotating divs) -->
-  <div class="hidden 1300px:flex 1300px:col-start-2 flex-col items-center justify-center relative">
+        <!-- Column 2 (rotating divs) -->
+        <div class="hidden 1300px:flex 1300px:col-start-2 flex-col items-center justify-center relative">
 
-    <!-- Left slant (\) -->
-    <div class="relative -rotate-12 -translate-x-1/4 lg:-translate-x-1/3 translate-y-12 animate-up-down overflow-visible">
-      <div class="px-8 py-6 rounded-2xl bg-[#0f0f0f] w-fit shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
-        <p class="text-white pb-8 text-[15px] w-[200px]">" Working with him was a game changer!"</p>
-        <p class="text-right text-heading-1">-pranavnb</p>
+          <!-- Left slant (\) -->
+          <div
+            class="relative -rotate-12 -translate-x-1/4 lg:-translate-x-1/3 translate-y-12 animate-up-down overflow-visible">
+            <div
+              class="px-8 py-6 rounded-2xl bg-[#0f0f0f] w-fit shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
+              <p class="text-white pb-8 text-[15px] w-[200px]">" Working with him was a game changer!"</p>
+              <p class="text-right text-heading-1">-pranavnb</p>
+            </div>
+            <img class="w-8 h-8 absolute right-0 rotate-[60deg]" src="./src/assets/images/cursor.png" alt="">
+          </div>
+
+          <!-- Right slant (/) -->
+          <div
+            class="relative rotate-12 animate-down-up overflow-visible translate-x-1/5 lg:translate-x-1/4 translate-y-10">
+            <div
+              class="px-8 py-6 rounded-2xl translate-x-12 bg-[#0f0f0f] w-fit shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
+              <p class="text-white text-[15px] pb-8 w-[200px]">" We Increased our conversions by 200%"</p>
+              <p class="text-right text-heading-1">-vijaynb</p>
+            </div>
+            <img class="w-8 h-8 absolute -top-5 left-8 -rotate-[50deg]" src="./src/assets/images/cursor.png" alt="">
+          </div>
+        </div>
       </div>
-      <img class="w-8 h-8 absolute right-0 rotate-[60deg]" src="./src/assets/images/cursor.png" alt="">
-    </div>
-
-    <!-- Right slant (/) -->
-    <div class="relative rotate-12 animate-down-up overflow-visible translate-x-1/5 lg:translate-x-1/4 translate-y-10">
-      <div class="px-8 py-6 rounded-2xl translate-x-12 bg-[#0f0f0f] w-fit shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
-        <p class="text-white text-[15px] pb-8 w-[200px]">" We Increased our conversions by 200%"</p>
-        <p class="text-right text-heading-1">-vijaynb</p>
-      </div>
-      <img class="w-8 h-8 absolute -top-5 left-8 -rotate-[50deg]" src="./src/assets/images/cursor.png" alt="">
-    </div>
-  </div>
-</div>
 
 
-<!-- bannner-end -->
+      <!-- bannner-end -->
 
       <!-- 2nd-div-project-boxes -->
-   
+
       <!-- parent-flex-div -->
       <div class=" max-w-[1200px] mx-auto  px-4 md:px-12 pt-8 1300px:pt-0  flex items-center gap-4 z-20 w-full">
 
         <!-- left-flex-div -->
         <div class="flex flex-col gap-4">
           <!-- img-1-box-left -->
-        <div class="p-4 rounded-2xl bg-[#0f0f0f] relative">
+          <div class="p-4 rounded-2xl bg-[#0f0f0f] relative">
 
-       <div class=" ">
-       <img class="w-full h-auto rounded-2xl " src="./src/assets/images/img-1.avif" alt="project">
-       </div>
-        <button
-                class="icon-container absolute w-10 h-10 bottom-3 left-0 bg-black  transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-1 items-center justify-center rounded-full"
-                style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-                <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  width="36" height="36" fill="currentColor">
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
-                  </path>
-                </svg>
-              </button>
+            <div class=" ">
+              <img class="w-full h-auto rounded-2xl " src="./src/assets/images/img-1.avif" alt="project">
+            </div>
+            <button
+              class="icon-container absolute w-10 h-10 bottom-3 left-0 bg-black  transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-1 items-center justify-center rounded-full"
+              style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+              <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36"
+                height="36" fill="currentColor">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <!-- 2nd-img-div-left -->
+          <div class="p-4 rounded-2xl bg-[#0f0f0f] relative">
+
+            <div class="h-[290px] w-full overflow-hidden rounded-2xl">
+              <img class="w-full h-full object-cover object-center" src="./src/assets/images/img-3.avif" alt="project">
+            </div>
+            <button
+              class="icon-container absolute w-10 h-10 bottom-3 left-0 bg-black  transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-1 items-center justify-center rounded-full"
+              style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+              <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36"
+                height="36" fill="currentColor">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                </path>
+              </svg>
+            </button>
+          </div>
         </div>
-<!-- 2nd-img-div-left -->
-<div class="p-4 rounded-2xl bg-[#0f0f0f] relative">
+        <!-- left-flex-end -->
 
-        <div class="h-[290px] w-full overflow-hidden rounded-2xl">
-    <img class="w-full h-full object-cover object-center" 
-         src="./src/assets/images/img-3.avif" alt="project">
-  </div>
-        <button
-                class="icon-container absolute w-10 h-10 bottom-3 left-0 bg-black  transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-1 items-center justify-center rounded-full"
-                style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-                <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  width="36" height="36" fill="currentColor">
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
-                  </path>
-                </svg>
-              </button>
+        <!-- right-flex-start -->
+        <div class=" flex-col gap-4 hidden md:flex">
+          <!-- 3rd-img-div-right -->
+          <div class="p-4 rounded-2xl bg-[#0f0f0f] relative">
+
+            <div class="h-[290px] w-full overflow-hidden rounded-2xl">
+              <img class="w-full h-full object-cover object-center" src="./src/assets/images/img-2.avif" alt="project">
+            </div>
+            <button
+              class="icon-container absolute w-10 h-10 bottom-3 left-0 bg-black  transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-1 items-center justify-center rounded-full"
+              style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+              <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36"
+                height="36" fill="currentColor">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <!-- 4th-img-div-right -->
+          <div class="p-4 rounded-2xl bg-[#0f0f0f] relative">
+
+            <div class="">
+              <img class="rounded-2xl" src="./src/assets/images/img-4.avif" alt="project">
+            </div>
+            <button
+              class="icon-container absolute w-10 h-10 bottom-3 left-0 bg-black  transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-1 items-center justify-center rounded-full"
+              style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+              <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36"
+                height="36" fill="currentColor">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                </path>
+              </svg>
+            </button>
+          </div>
         </div>
-</div>
-<!-- left-flex-end -->
+        <!-- right-flex-end -->
 
-<!-- right-flex-start -->
-<div class=" flex-col gap-4 hidden md:flex">
-  <!-- 3rd-img-div-right -->
-        <div class="p-4 rounded-2xl bg-[#0f0f0f] relative">
-
-        <div class="h-[290px] w-full overflow-hidden rounded-2xl">
-    <img class="w-full h-full object-cover object-center" 
-         src="./src/assets/images/img-2.avif" alt="project">
-  </div>
-         <button
-                class="icon-container absolute w-10 h-10 bottom-3 left-0 bg-black  transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-1 items-center justify-center rounded-full"
-                style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-                <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  width="36" height="36" fill="currentColor">
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
-                  </path>
-                </svg>
-              </button>
-        </div>
-<!-- 4th-img-div-right -->
-<div class="p-4 rounded-2xl bg-[#0f0f0f] relative">
-
-       <div class="">
-       <img class="rounded-2xl" src="./src/assets/images/img-4.avif" alt="project">
-       </div>
-         <button
-                class="icon-container absolute w-10 h-10 bottom-3 left-0 bg-black  transition-all duration-200 ease-in-out overflow-hidden cursor-pointer flex p-1 items-center justify-center rounded-full"
-                style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-                <svg class="icon-svg translate-y-0 icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  width="36" height="36" fill="currentColor">
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
-                  </path>
-                </svg>
-              </button>
-        </div>
-</div>
-<!-- right-flex-end -->
-        
       </div>
 
       <!-- parent-flex-end -->
 
       <!-- drop-down-icon -->
-<div class="flex items-center justify-center pt-16">
-      <span class="animate-down-up ">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path></svg>
-      </span>
-
-</div>
- <!-- drop-down-icon-end -->
-
-<div class=" border border-zinc-800  rounded-3xl bg-[#0f0f0f]" style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, 
-                rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-
-<div class="  relative   pb-4  pt-16  md:w-full">
-  <div class="">
-  
-      <div class="flex items-center flex-col md:justify-between justify-center   px-4 gap-[20px] py-12">
-    <div class="flex w-fit items-center gap-2 rounded-full bg-bg-graphic-div py-2 px-4" >
-            <div class="w-4 h-4 border-2 border-white  rounded-full flex items-center justify-center">
-              <div class="w-2 h-2 bg-white rounded-full"></div>
-            </div>
-            <span class="text-sm font-display">Expert Designer</span>
-          </div>
-          <h2 class="md:text-[44px]  text-center text-[38px] font-extralight md:font-heading">Johan Beker, <span class="text-heading-1">Your Designer</span></h2>
-          <p class="md:font-medium text-[15px] text-center text-heading-1">Brief initial presentation of myself and my previous experiences.</p>
+      <div class="flex items-center justify-center pt-16">
+        <span class="animate-down-up ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z">
+            </path>
+          </svg>
+        </span>
 
       </div>
+      <!-- drop-down-icon-end -->
 
-<!-- john beker introduction-div -->
- <div class="1300px:flex flex-row   items-center justify-center 1300px:px-12">
+      <div class=" bg-[#0f0f0f] relative rounded-3xl   px-4 py- w-full flex flex-col gap-y-4 border-t border-zinc-800 ">
 
+        <div class="  relative   pb-12  pt-16  md:w-full">
+          <div class="">
 
+            <div class="flex items-center flex-col md:justify-between    gap-[20px] py-12">
+              <div class="flex w-fit items-center gap-2 rounded-full bg-bg-graphic-div py-2 px-4">
+                <div class="w-4 h-4 border-2 border-white  rounded-full flex items-center justify-center">
+                  <div class="w-2 h-2 bg-white rounded-full"></div>
+                </div>
+                <span class="text-sm font-display">Expert Designer</span>
+              </div>
+              <h2 class="md:text-[44px] text-center   text-[32px] font-extralight md:font-heading">Johan Beker, <span
+                  class="text-heading-1">Your Designer</span></h2>
+              <p class="md:font-medium text-[15px] text-center text-heading-1">Brief initial presentation of myself and
+                my previous experiences.</p>
 
-      <div class="md:px-8 px-4  1300px:w-[40%]   ">
- <div class="bg-[#0f0f0f] relative rounded-2xl md:p-4 px-6 py-6 w-full flex flex-col gap-y-4 " style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-<div>
-   <img class="w-full h-[382px] 1300px:h-[400px] overflow-hidden rounded-2xl  object-center object-cover " src="./src/assets/images/john-beker.avif" alt="">
+            </div>
 
-</div>
-<!-- details -->
-<div class="pb-6 border-b-1 border-[#262626] ">
-<h3 class="text-white pb-2 text-[23px] md:font-heading  "><span>Hello I am </span> <span class="text-heading-1">Johan Beker</span></h3>
-<p class="text-white font-light text-[15px] font-display pb-6 ">UI/UX Interaction Designer Based in Berlin.</p>
-<div class="flex items-center gap-[20px]">
-  <!-- icon-1 -->
-  <div class="flex items-center gap-3">
-    <div class=" rounded-full flex items-center justify-center p-2 w-10 h-10">
-      <!-- SVG -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"></path></svg>
-    </div>
-    <!-- divider -->
-    <span class="border-l border-zinc-700 h-8"></span>
-  </div>
-
-  <!-- icon-2 -->
-  <div class="flex items-center gap-3">
-    <div class="rounded-full flex items-center justify-center p-3 w-12 h-12">
-      <!-- SVG -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"></path></svg>
-    </div>
-    <!-- divider -->
-    <span class="border-l border-zinc-700 h-8"></span>
-  </div>
-
-  <!-- icon-3 -->
-  <div class="flex items-center gap-3">
-    <div class=" rounded-full flex items-center justify-center p-2 w-10 h-10">
-      <!-- SVG -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"></path></svg>
-    </div>
-  </div>
-</div>
+            <!-- john beker introduction-div -->
+            <div class="1300px:flex flex-row   items-center justify-center 1300px:px-12">
 
 
 
-</div>
+              <div class="md:px-8   1300px:w-[40%]   ">
+                <div class="bg-[#0f0f0f] relative rounded-2xl md:p-4 px-6 py-6 w-full flex flex-col gap-y-4 "
+                  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+                  <div>
+                    <img
+                      class="w-full h-[382px] 1300px:h-[400px] overflow-hidden rounded-2xl  object-center object-cover "
+                      src="./src/assets/images/john-beker.avif" alt="">
 
-<!-- button -->
-<button class="flex justify-start pb-4">
-  <a href="/" class="rounded-[100px] w-fit  font-medium md:py-[13px] md:px-[26px] px-8 py-4  text-heading-1 font-para
+                  </div>
+                  <!-- details -->
+                  <div class="pb-6 border-b-1 border-[#262626] ">
+                    <h3 class="text-white pb-2 text-[23px] md:font-heading  "><span>Hello I am </span> <span
+                        class="text-heading-1">Johan Beker</span></h3>
+                    <p class="text-white font-light text-[15px] font-display pb-6 ">UI/UX Interaction Designer Based in
+                      Berlin.</p>
+                    <div class="flex items-center gap-[20px]">
+                      <!-- icon-1 -->
+                      <div class="flex items-center gap-3">
+                        <div class=" rounded-full flex items-center justify-center p-2 w-10 h-10">
+                          <!-- SVG -->
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
+                            fill="currentColor">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z">
+                            </path>
+                          </svg>
+                        </div>
+                        <!-- divider -->
+                        <span class="border-l border-zinc-700 h-8"></span>
+                      </div>
+
+                      <!-- icon-2 -->
+                      <div class="flex items-center gap-3">
+                        <div class="rounded-full flex items-center justify-center p-3 w-12 h-12">
+                          <!-- SVG -->
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
+                            fill="currentColor">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+                            </path>
+                          </svg>
+                        </div>
+                        <!-- divider -->
+                        <span class="border-l border-zinc-700 h-8"></span>
+                      </div>
+
+                      <!-- icon-3 -->
+                      <div class="flex items-center gap-3">
+                        <div class=" rounded-full flex items-center justify-center p-2 w-10 h-10">
+                          <!-- SVG -->
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
+                            fill="currentColor">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                              d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <!-- button -->
+                  <button class="flex justify-start pb-4">
+                    <a href="/" class="rounded-[100px] w-fit  font-medium md:py-[13px] md:px-[26px] px-8 py-4  text-heading-1 font-para
   [background:linear-gradient(180deg,rgb(120,120,120)_-200%,rgb(8,8,8)_100%)]
   shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">Connect with me</a>
 
 
-</button>
- </div>
-      </div>
-      <!-- john-beker skills -->
- <div class="1300px:px-0 md:px-8  px-4 pt-8 1300px:w-[40%]">
- <div class="bg-[#0f0f0f] relative rounded-2xl md:p-6 px-6 pt-6 pb-9 md:w-full flex overflow-hidden flex-col gap-y-4 " style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-  <div class="py-5 border-b border-[#262626] ">
-<p class="text-heading-1    ">I'm Johan Beker, a dedicated Web Designer & Developer based in the vibrant city of Berlin, Germany. I specialize in creative design with seamless technical execution to craft exceptional digital experiences.</p>
-  </div>
-   
-
-  <div class="py-5 flex gap-4 flex-wrap   border-b border-[#262626]">
-       <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
-          <span>Product Design</span>
-       </div>
-       <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
-          <span>UX Design</span>
-       </div>
-       <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
-          <span>UI Design</span>
-       </div>
-       <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
-          <span>Framer </span>
-       </div>
-       <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
-          <span>Branding</span>
-       </div>
-       <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
-          <span>Webflow</span>
-       </div>
-  </div>
-
-  <!-- table-like-layout -->
-   <div class="flex flex-col gap-[20px] pb-5  ">
-  <div class="md:grid grid-cols-[1fr_1fr_auto] flex flex-col gap-5 w-full bg-[#0a0a0a] py-6 px-3 rounded-xl"
-       style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px">
-    <div>
-      <span class="text-heading-1">Freelance</span>
-    </div>
-    <div>
-      <span class="text-heading-1">GreenLeafCo</span>
-    </div>
-    <div class="md:text-right">
-      <span class="text-heading-1">2021</span>
-    </div>
-  </div>
-  <div class="md:grid grid-cols-[1fr_1fr_auto] flex flex-col gap-5 w-full bg-[#0a0a0a] py-6 px-3 rounded-xl"
-       style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px">
-    <div>
-      <span class="text-heading-1">UX/UI Designer</span>
-    </div>
-    <div>
-      <span class="text-heading-1">UrbanFit Studio</span>
-    </div>
-    <div class="md:text-right">
-      <span class="text-heading-1">2022</span>
-    </div>
-  </div>
-  <div class="md:grid grid-cols-[1fr_1fr_auto] flex flex-col gap-5 w-full bg-[#0a0a0a] py-6 px-3 rounded-xl"
-       style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px">
-    <div>
-      <span class="text-heading-1">Product Designer</span>
-    </div>
-    <div>
-      <span class="text-heading-1">PixelCraft Studios</span>
-    </div>
-    <div class="md:text-right">
-      <span class="text-heading-1">2023</span>
-    </div>
-  </div>
-  <div class="md:grid grid-cols-[1fr_1fr_auto] flex flex-col gap-5 w-full bg-[#0a0a0a] py-6 px-3 rounded-xl"
-       style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px">
-    <div>
-      <span class="text-heading-1">Graphic Designer</span>
-    </div>
-    <div>
-      <span class="text-heading-1">VistaWorks</span>
-    </div>
-    <div class="md:text-right">
-      <span class="text-heading-1">2024</span>
-    </div>
-  </div>
-</div>
-
- </div>
- </div>
-</div>
-
- </div>
-  </div>
-</div>
-<!-- process-is-every-thing-div -->
- <div class="pt-16 max-w-[1200px] mx-auto w-full">
+                  </button>
+                </div>
+              </div>
+              <!-- john-beker skills -->
+              <div class="1300px:px-0 md:px-8   pt-8 1300px:w-[40%]">
+                <div
+                  class="bg-[#0f0f0f] relative rounded-2xl md:p-6 px-4 pt-6 pb-9 md:w-full flex overflow-hidden flex-col gap-y-4 "
+                  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+                  <div class="py-5 border-b border-[#262626] ">
+                    <p class="text-heading-1    ">I'm Johan Beker, a dedicated Web Designer & Developer based in the
+                      vibrant city of Berlin, Germany. I specialize in creative design with seamless technical execution
+                      to craft exceptional digital experiences.</p>
+                  </div>
 
 
-  <div class="bg-[#0f0f0f] relative rounded-2xl md:p-4 px-6 py-6 w-full flex flex-col gap-y-4 border-t border-zinc-800 " >
+                  <div class="py-5 flex gap-4 flex-wrap   border-b border-[#262626]">
+                    <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
+                      <span>Product Design</span>
+                    </div>
+                    <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
+                      <span>UX Design</span>
+                    </div>
+                    <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
+                      <span>UI Design</span>
+                    </div>
+                    <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
+                      <span>Framer </span>
+                    </div>
+                    <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
+                      <span>Branding</span>
+                    </div>
+                    <div class="px-3 py-3 bg-black text-heading-1 rounded-xl">
+                      <span>Webflow</span>
+                    </div>
+                  </div>
 
-    <!-- process-heading-div -->
-    <div class="flex items-center flex-col justify-center  px-4 gap-[20px] py-8">
-    <div class="flex w-fit items-center gap-2 rounded-full bg-bg-graphic-div py-2 px-4" style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, 
-                rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-            <div class="w-4 h-4 border-2 border-white  rounded-full flex items-center justify-center">
-              <div class="w-2 h-2 bg-white rounded-full"></div>
+                  <!-- table-like-layout -->
+                  <div class="flex flex-col gap-[20px] pb-5  ">
+                    <div
+                      class="md:grid grid-cols-[1fr_1fr_auto] flex flex-col gap-5 w-full bg-[#0a0a0a] py-6 px-3 rounded-xl"
+                      style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px">
+                      <div>
+                        <span class="text-heading-1">Freelance</span>
+                      </div>
+                      <div>
+                        <span class="text-heading-1">GreenLeafCo</span>
+                      </div>
+                      <div class="md:text-right">
+                        <span class="text-heading-1">2021</span>
+                      </div>
+                    </div>
+                    <div
+                      class="md:grid grid-cols-[1fr_1fr_auto] flex flex-col gap-5 w-full bg-[#0a0a0a] py-6 px-3 rounded-xl"
+                      style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px">
+                      <div>
+                        <span class="text-heading-1">UX/UI Designer</span>
+                      </div>
+                      <div>
+                        <span class="text-heading-1">UrbanFit Studio</span>
+                      </div>
+                      <div class="md:text-right">
+                        <span class="text-heading-1">2022</span>
+                      </div>
+                    </div>
+                    <div
+                      class="md:grid grid-cols-[1fr_1fr_auto] flex flex-col gap-5 w-full bg-[#0a0a0a] py-6 px-3 rounded-xl"
+                      style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px">
+                      <div>
+                        <span class="text-heading-1">Product Designer</span>
+                      </div>
+                      <div>
+                        <span class="text-heading-1">PixelCraft Studios</span>
+                      </div>
+                      <div class="md:text-right">
+                        <span class="text-heading-1">2023</span>
+                      </div>
+                    </div>
+                    <div
+                      class="md:grid grid-cols-[1fr_1fr_auto] flex flex-col gap-5 w-full bg-[#0a0a0a] py-6 px-3 rounded-xl"
+                      style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px">
+                      <div>
+                        <span class="text-heading-1">Graphic Designer</span>
+                      </div>
+                      <div>
+                        <span class="text-heading-1">VistaWorks</span>
+                      </div>
+                      <div class="md:text-right">
+                        <span class="text-heading-1">2024</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
-            <span class="text-sm font-display">How it works</span>
+
           </div>
-          <h2 class="md:text-[44px] text-white  text-center text-[38px] font-extralight md:font-heading">Process <span class="text-heading-1">Is Everything</span></h2>
-          <p class="md:font-medium text-[15px] text-center text-heading-1">Simple,streamlined process is what get's you results<p>
+        </div>
+      </div>
+      <!-- process-is-every-thing-div -->
+      <div class=" ">
+
+
+        <div
+          class="bg-[#0f0f0f] relative rounded-3xl   px-4 py-16 w-full flex flex-col gap-y-4 border-t border-zinc-800 ">
+
+          <!-- process-heading-div -->
+          <div class=" max-w-[1200px] mx-auto w-full">
+
+
+            <div class="flex  items-center flex-col justify-center   gap-[20px] py-8">
+              <div class="flex w-fit px-4 items-center gap-2 rounded-full bg-bg-graphic-div py-2 " style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, 
+                rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+                <div class="w-4 h-4 border-2 border-white  rounded-full flex items-center ">
+                  <div class="w-2 h-2 bg-white rounded-full"></div>
+                </div>
+                <span class="text-sm font-display">How it works</span>
+              </div>
+              <h2 class="md:text-[44px] text-white  text-center text-[38px] font-extralight md:font-heading">Process
+                <span class="text-heading-1">Is Everything</span></h2>
+              <p class="md:font-medium text-[15px] text-center text-heading-1">Simple,streamlined process is what get's
+                you results
+              <p>
+
+            </div>
+            <!-- process-heading-div-end -->
+            <div class="flex flex-col gap-12 ">
+
+
+              <div id="process-container"
+                class=" flex before-lg:w-full 1300px:overflow-x-auto justify-center duration-500 md:items-center 1300px:flex-nowrap  flex-wrap   gap-5 ">
+
+
+
+                <div class=" flex max-w-[500px]  md:w-[470px]    flex-col p-5 rounded-xl bg-[rgb(17,17,17)] "
+                  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;  ">
+                  <!-- number-div -->
+                  <div class="flex items-center justify-between">
+                    <div class="w-4 h-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        fill="currentColor">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M15.3873 13.4975L17.9403 20.5117L13.2418 22.2218L10.6889 15.2076L6.79004 17.6529L8.4086 1.63318L19.9457 12.8646L15.3873 13.4975ZM15.3768 19.3163L12.6618 11.8568L15.6212 11.4459L9.98201 5.9561L9.19088 13.7863L11.7221 12.1988L14.4371 19.6583L15.3768 19.3163Z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 flex items-center bg-[rgb(10,10,10)]  justify-center rounded-full "
+                      style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+                      <span class="text-white">1</span>
+                    </div>
+                  </div>
+                  <!-- num-div-end -->
+                  <div class="pt-6">
+                    <h4 class="text-white text-xl pb-4">Let's Get In Touch</h4>
+                    <p class="text-[15px] text-heading-1 before-lg:w-[330px] pb-5 border-b border-[#262626] ">Start by
+                      reaching out through our contact page. Fill out the form or book a call to discuss your project,
+                      goals, and ideas</p>
+                  </div>
+                  <div class="pt-6 flex justify-start">
+                    <span class="py-1 px-3 rounded-2xl text-heading-1 bg-[rgb(17,17,17)] border border-[#262626]">Step
+                      1</span>
+                  </div>
+                </div>
+
+
+
+                <div class=" p-5 flex   max-w-[500px] md:w-[470px]  flex-col rounded-xl bg-[rgb(17,17,17)] "
+                  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;  ">
+                  <!-- number-div -->
+                  <div class="flex items-center justify-between">
+                    <div class="w-4 h-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
+                        fill="currentColor">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M8.00008 6V9H5.00008V6H8.00008ZM3.00008 4V11H10.0001V4H3.00008ZM13.0001 4H21.0001V6H13.0001V4ZM13.0001 11H21.0001V13H13.0001V11ZM13.0001 18H21.0001V20H13.0001V18ZM10.7072 16.2071L9.29297 14.7929L6.00008 18.0858L4.20718 16.2929L2.79297 17.7071L6.00008 20.9142L10.7072 16.2071Z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 flex items-center bg-[rgb(10,10,10)]  justify-center rounded-full "
+                      style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+                      <span class="text-white">2</span>
+                    </div>
+                  </div>
+                  <!-- num-div-end -->
+                  <div class="pt-6">
+                    <h4 class="text-white text-xl pb-4">Grab your Designs</h4>
+                    <p class="text-[15px] text-heading-1 before-lg:w-[330px] pb-5 border-b border-[#262626] ">Tell me
+                      your unique vision, and I’ll create stunning, functional designs that perfectly align with your
+                      goals</p>
+                  </div>
+                  <div class="pt-6 flex justify-start">
+                    <span class="py-1 px-3 rounded-2xl text-heading-1 bg-[rgb(17,17,17)] border border-[#262626]">Step
+                      2</span>
+                  </div>
+                </div>
+
+
+
+                <div class="  p-5 flex  max-w-[500px] md:w-[470px]  flex-col rounded-xl bg-[rgb(17,17,17)] "
+                  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;  ">
+                  <!-- number-div -->
+                  <div class="flex items-center justify-between">
+                    <div class="w-4 h-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
+                        fill="currentColor">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M5 18.89H6.41421L15.7279 9.57627L14.3137 8.16206L5 17.4758V18.89ZM21 20.89H3V16.6473L16.435 3.21231C16.8256 2.82179 17.4587 2.82179 17.8492 3.21231L20.6777 6.04074C21.0682 6.43126 21.0682 7.06443 20.6777 7.45495L9.24264 18.89H21V20.89ZM15.7279 6.74785L17.1421 8.16206L18.5563 6.74785L17.1421 5.33363L15.7279 6.74785Z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div class="w-8 h-8 flex items-center bg-[rgb(10,10,10)]  justify-center rounded-full "
+                      style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+                      <span class="text-white">3</span>
+                    </div>
+                  </div>
+                  <!-- num-div-end -->
+                  <div class="pt-6">
+                    <h4 class="text-white text-xl pb-4">Kickstart Development</h4>
+                    <p class="text-[15px] text-heading-1 before-lg:w-[330px] pb-5 border-b border-[#262626] ">I expertly
+                      transform your designs into a powerful, scalable solution, fully ready to launch
+
+                    </p>
+                  </div>
+                  <div class="pt-6 flex justify-start">
+                    <span class="py-1 px-3 rounded-2xl text-heading-1 bg-[rgb(17,17,17)] border border-[#262626]">Step
+                      3</span>
+                  </div>
+                </div>
+
+
+
+                <div class=" p-5 flex   max-w-[500px] md:w-[470px]  flex-col rounded-xl bg-[rgb(17,17,17)] "
+                  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;  ">
+                  <!-- number-div -->
+                  <div class="flex items-center justify-between">
+                    <div class="w-8 h-8">
+                      <img src="./src/assets/images/boost.png" alt="">
+                    </div>
+                    <div class="w-8 h-8 flex items-center bg-[rgb(10,10,10)]  justify-center rounded-full "
+                      style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+                      <span class="text-white">4</span>
+                    </div>
+                  </div>
+                  <!-- num-div-end -->
+                  <div class="pt-6">
+                    <h4 class="text-white text-xl pb-4">And Hand Over</h4>
+                    <p class="text-[15px] text-heading-1 before-lg:w-[330px] pb-5 border-b border-[#262626] ">Receive a
+                      fully tested, polished, and high-quality product tailored to your needs with ongoing support</p>
+                  </div>
+                  <div class="pt-6 flex justify-start">
+                    <span class="py-1 px-3 rounded-2xl bg-[rgb(17,17,17)] text-heading-1 border border-[#262626]">Step
+                      4</span>
+                  </div>
+                </div>
+              </div>
+              <!-- i-am-with-u-div -->
+              <div class="flex justify-center items-center    ">
+                <div class="p-5 md:w-full rounded-xl bg-[rgb(17,17,17)] flex flex-col gap-5"
+                  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+                  <div class="flex flex-col md:flex-row justify-start gap-3 md:items-center">
+                    <!-- emoji svg -->
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        fill="currentColor">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 13H9C9 14.6569 10.3431 16 12 16C13.6569 16 15 14.6569 15 13H17C17 15.7614 14.7614 18 12 18C9.23858 18 7 15.7614 7 13ZM8 11C7.17157 11 6.5 10.3284 6.5 9.5C6.5 8.67157 7.17157 8 8 8C8.82843 8 9.5 8.67157 9.5 9.5C9.5 10.3284 8.82843 11 8 11ZM16 11C15.1716 11 14.5 10.3284 14.5 9.5C14.5 8.67157 15.1716 8 16 8C16.8284 8 17.5 8.67157 17.5 9.5C17.5 10.3284 16.8284 11 16 11Z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 class="text-white text-[20px]">I am with you in every step</h5>
+                    </div>
+                  </div>
+                  <p class="text-[15px]">alongside you at each step for seamless experience</p>
+                  <div class="flex sm:flex-row flex-col justify-start gap-5">
+                    <a href="/" class="rounded-[100px] font-medium md:py-[13px] md:px-[26px] px-10 text-center py-4 text-white font-para
+         [background:linear-gradient(180deg,rgb(120,120,120)_-200%,rgb(8,8,8)_100%)]
+         shadow-[rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset]">
+                      See All Projects
+                    </a>
+
+                    <a href="/" class="rounded-[100px] md:px-[26px] px-16 py-4 font-medium md:py-[13px] text-center font-para text-btn
+         [background:linear-gradient(180deg,rgb(255,255,255)_0%,rgb(120,120,120)_140%)]
+         bg-[length:100%_100%] hover:bg-[length:100%_240%]
+         transition-all duration-500 ease-in-out">
+                      Contact now
+                    </a>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+
+        <div>
+
+        </div>
 
       </div>
-      <!-- process-heading-div-end -->
-
-<div class=" flex before-lg:w-full md:items-center md:justify-center    1300px:flex-nowrap  flex-wrap  before-lg:px-8 gap-5 ">
-  
 
 
-     <div class=" flex md:max-w-[640px] lg:min-w-[450px]   flex-col p-5 rounded-xl bg-[rgb(17,17,17)] "  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;  ">
-      <!-- number-div -->
-<div class="flex items-center justify-between">
-  <div class="w-4 h-4">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M15.3873 13.4975L17.9403 20.5117L13.2418 22.2218L10.6889 15.2076L6.79004 17.6529L8.4086 1.63318L19.9457 12.8646L15.3873 13.4975ZM15.3768 19.3163L12.6618 11.8568L15.6212 11.4459L9.98201 5.9561L9.19088 13.7863L11.7221 12.1988L14.4371 19.6583L15.3768 19.3163Z"></path></svg>
-  </div>
-  <div class="w-8 h-8 flex items-center bg-[rgb(10,10,10)]  justify-center rounded-full " style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-<span class="text-white">1</span>
-  </div>
-</div>
-<!-- num-div-end -->
-<div class="pt-6">
-<h4 class="text-white text-xl pb-4">Let's Get In Touch</h4>
-<p class="text-[15px] text-heading-1 before-lg:w-[330px] pb-5 border-b border-[#262626] ">Start by reaching out through our contact page. Fill out the form or book a call to discuss your project, goals, and ideas</p>
-</div>
-<div class="pt-6 flex justify-start">
-    <span class="py-1 px-3 rounded-2xl text-heading-1 bg-[rgb(17,17,17)] border border-[#262626]">Step 1</span>
-</div>
-     </div>
+      <!-- design-services -->
+      <div
+        class="bg-[#0f0f0f] relative   rounded-3xl md:py-16 md:px-12 px-4 py-6 w-full flex flex-col gap-y-4 border-t border-zinc-800 ">
+
+        <!-- process-heading-div -->
+        <div class=" max-w-[1200px] mx-auto w-full">
+          <div class="flex  flex-col gap-8 ">
+            <div class="flex   flex-col justify-start   gap-[10px] py-8">
+              <div class="flex w-fit items-center gap-2 rounded-full bg-bg-graphic-div py-2 px-4" style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, 
+                rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+                <div class="w-4 h-4 border-2 border-white  rounded-full flex items-center justify-center">
+                  <div class="w-2 h-2 bg-white rounded-full"></div>
+                </div>
+                <span class="text-sm font-display">How it works</span>
+              </div>
+              <h2 class="md:text-[44px] text-white   text-[38px] font-extralight md:font-heading">Design <span
+                  class="text-heading-1">Services</span></h2>
+              <p class="md:font-medium text-[15px]  text-heading-1">Explore a suit of design services to elevate your
+                brand.
+              <p>
+                <button class="pt-5">
+                  <a href="/" class="rounded-[100px] md:px-[26px] px-16 py-4 font-medium md:py-[13px] text-center font-para text-btn
+         [background:linear-gradient(180deg,rgb(255,255,255)_0%,rgb(120,120,120)_140%)]
+         bg-[length:100%_100%] hover:bg-[length:100%_240%]
+         transition-all duration-500 ease-in-out">
+                    Contact now
+                  </a>
+                </button>
+            </div>
+
+            <div class="md:w-[830px] max-w-[920px]">
+<div class="flex flex-col gap-5">
 
 
+            
+            <div class="  p-7  rounded-xl bg-[rgb(17,17,17)] flex flex-col gap-5"
+              style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+             <div class="flex flex-col gap-5">
+           <div class="flex justify-start gap-3 ">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    fill="currentColor">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M21 3C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21ZM11 13H4V19H11V13ZM20 13H13V19H20V13ZM11 5H4V11H11V5ZM20 5H13V11H20V5Z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class="text-white text-[20px] ">
+                    Website Design
+                  </h5>
 
+                </div>
+              </div>
+              <p class="text-[15px] text-heading-1 font-light">Designing breathtaking, user-centric websites that boost
+                engagement, conversions, and growth, perfectly aligned with your brand</p>
+               <img class="h-[260px] rounded-xl w-full object-cover object-center" src="./src/assets/images/img-5.avif" alt="">
 
-     <div class=" p-5 flex   md:max-w-[640px] lg:min-w-[450px]  flex-col rounded-xl bg-[rgb(17,17,17)] "  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;  ">
-      <!-- number-div -->
-<div class="flex items-center justify-between">
-  <div class="w-4 h-4">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M8.00008 6V9H5.00008V6H8.00008ZM3.00008 4V11H10.0001V4H3.00008ZM13.0001 4H21.0001V6H13.0001V4ZM13.0001 11H21.0001V13H13.0001V11ZM13.0001 18H21.0001V20H13.0001V18ZM10.7072 16.2071L9.29297 14.7929L6.00008 18.0858L4.20718 16.2929L2.79297 17.7071L6.00008 20.9142L10.7072 16.2071Z"></path></svg>
-  </div>
-  <div class="w-8 h-8 flex items-center bg-[rgb(10,10,10)]  justify-center rounded-full " style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-<span class="text-white">2</span>
-  </div>
-</div>
-<!-- num-div-end -->
-<div class="pt-6">
-<h4 class="text-white text-xl pb-4">Grab your Designs</h4>
-<p class="text-[15px] text-heading-1 before-lg:w-[330px] pb-5 border-b border-[#262626] ">Tell me your unique vision, and I’ll create stunning, functional designs that perfectly align with your goals</p>
-</div>
-<div class="pt-6 flex justify-start">
-    <span class="py-1 px-3 rounded-2xl text-heading-1 bg-[rgb(17,17,17)] border border-[#262626]">Step 2</span>
-</div>
-     </div>
+             </div>
+              
+            </div>
 
-
-
-     <div class="  p-5 flex  md:max-w-[640px] lg:min-w-[450px]   flex-col rounded-xl bg-[rgb(17,17,17)] "  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;  ">
-      <!-- number-div -->
-<div class="flex items-center justify-between">
-  <div class="w-4 h-4">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 18.89H6.41421L15.7279 9.57627L14.3137 8.16206L5 17.4758V18.89ZM21 20.89H3V16.6473L16.435 3.21231C16.8256 2.82179 17.4587 2.82179 17.8492 3.21231L20.6777 6.04074C21.0682 6.43126 21.0682 7.06443 20.6777 7.45495L9.24264 18.89H21V20.89ZM15.7279 6.74785L17.1421 8.16206L18.5563 6.74785L17.1421 5.33363L15.7279 6.74785Z"></path></svg>
-  </div>
-  <div class="w-8 h-8 flex items-center bg-[rgb(10,10,10)]  justify-center rounded-full " style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-<span class="text-white">3</span>
-  </div>
-</div>
-<!-- num-div-end -->
-<div class="pt-6">
-<h4 class="text-white text-xl pb-4">Kickstart Development</h4>
-<p class="text-[15px] text-heading-1 before-lg:w-[330px] pb-5 border-b border-[#262626] ">I expertly transform your designs into a powerful, scalable solution, fully ready to launch
-
-</p>
-</div>
-<div class="pt-6 flex justify-start">
-    <span class="py-1 px-3 rounded-2xl text-heading-1 bg-[rgb(17,17,17)] border border-[#262626]">Step 3</span>
-</div>
-     </div>
-
-
-
-     <div class=" p-5 flex   md:max-w-[640px] lg:min-w-[450px]  flex-col rounded-xl bg-[rgb(17,17,17)] "  style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;  ">
-      <!-- number-div -->
-<div class="flex items-center justify-between">
-  <div class="w-8 h-8">
-<img src="./src/assets/images/boost.png" alt="">
-  </div>
-  <div class="w-8 h-8 flex items-center bg-[rgb(10,10,10)]  justify-center rounded-full " style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
-<span class="text-white">4</span>
-  </div>
-</div>
-<!-- num-div-end -->
-<div class="pt-6">
-<h4 class="text-white text-xl pb-4">And Hand Over</h4>
-<p class="text-[15px] text-heading-1 before-lg:w-[330px] pb-5 border-b border-[#262626] ">Receive a fully tested, polished, and high-quality product tailored to your needs with ongoing support</p>
-</div>
-<div class="pt-6 flex justify-start">
-    <span class="py-1 px-3 rounded-2xl bg-[rgb(17,17,17)] text-heading-1 border border-[#262626]">Step 4</span>
-</div>
-     </div>
-   
-   
-   
-</div>
-
-
-  </div>
-<!-- divs-process-boxes-layout -->
-
-
+            <div class="  p-7  rounded-xl bg-[rgb(17,17,17)] flex flex-col gap-5"
+              style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+<div class="flex flex-col gap-4">
+    <div class="flex justify-start gap-3">
 <div>
-
+  <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 5.1438V16.0002H18.3391L6 5.1438ZM4 2.932C4 2.07155 5.01456 1.61285 5.66056 2.18123L21.6501 16.2494C22.3423 16.8584 21.9116 18.0002 20.9896 18.0002H6V22H4V2.932Z"></path></svg>
+</div>
+<div>
+  <h5 class="text-[20px]">Graphic Design</h5>
 </div>
 
- </div>
+
+    </div>
+    <p class="text-[15px] text-heading-1 font-light">Crafting bold, engaging, and versatile graphic designs that elevate your brand and captivate your audience</p>
+    </div>
+            </div>
+            <div class="  p-7  rounded-xl bg-[rgb(17,17,17)] flex flex-col gap-5"
+              style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+<div class="flex flex-col gap-4">
+    <div class="flex justify-start gap-3">
+<div>
+  <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 5.1438V16.0002H18.3391L6 5.1438ZM4 2.932C4 2.07155 5.01456 1.61285 5.66056 2.18123L21.6501 16.2494C22.3423 16.8584 21.9116 18.0002 20.9896 18.0002H6V22H4V2.932Z"></path></svg>
+</div>
+<div>
+  <h5 class="text-[20px]">Logo Design</h5>
+</div>
+
+
+    </div>
+    <p class="text-[15px] text-heading-1 font-light">Crafting distinctive, scalable, and impactful logos that embody your brand’s identity and vision</p>
+    </div>
+            </div>
+             <div class="  p-7  rounded-xl bg-[rgb(17,17,17)] flex flex-col gap-5"
+              style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;">
+<div class="flex flex-col gap-4">
+    <div class="flex justify-start gap-3">
+<div>
+  <img class="w-6 h-6 " src="./src/assets/images/framer-svgrepo-com-1.svg" alt="">
+</div>
+<div>
+  <h5 class="text-[20px]">Framer Design</h5>
+</div>
+
+
+    </div>
+    <p class="text-[15px] text-heading-1 font-light">Bringing ideas to life with interactive, user-centered Framer designs that simplify complexity and elevate user experience</p>
+    </div>
+<div class="flex items-center flex-col gap-6 justify-center ">
+
+<!-- h233 w302
+ -->  
+  <div class="swiper swiper-images w-[100%]  ">
+  <div class="swiper-wrapper  ">
     
+    <div class="swiper-slide flex w-full gap-2 items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-1.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-2.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-3.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-1.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-2.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-3.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-1.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-2.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-3.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-1.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-2.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-3.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-1.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-2.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-3.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-1.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-2.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-3.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-1.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-2.avif" alt="">
+    </div>
+    <div class="swiper-slide flex w-full items-center justify-center  text-black">
+      <img  class="rounded-xl w-[330px] h-[200px]" src="./src/assets/images/slide-3.avif" alt="">
+    </div>
+  </div>
+
+  <div>
+
+  </div>
+
+
+  
+</div>
+<div class="pt-12"> 
+
+
+<div class="swiper swiper-images w-[100%] bg-pink-200   ">
+  <div class="swiper-wrapper  ">
+    <div class=" swiper-slide flex items-center text-black gap-3">
+     <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM15.0008 11.667L10.1219 8.41435C10.0562 8.37054 9.979 8.34717 9.9 8.34717C9.6791 8.34717 9.5 8.52625 9.5 8.74717V15.2524C9.5 15.3314 9.5234 15.4086 9.5672 15.4743C9.6897 15.6581 9.9381 15.7078 10.1219 15.5852L15.0008 12.3326C15.0447 12.3033 15.0824 12.2656 15.1117 12.2217C15.2343 12.0379 15.1846 11.7895 15.0008 11.667Z"></path></svg>
+     </div>
+     <div>
+<span>Video & Motion Graphics</span>
+     </div>
+    </div>
+    <div class=" swiper-slide flex items-center text-black gap-3">
+     <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM15.0008 11.667L10.1219 8.41435C10.0562 8.37054 9.979 8.34717 9.9 8.34717C9.6791 8.34717 9.5 8.52625 9.5 8.74717V15.2524C9.5 15.3314 9.5234 15.4086 9.5672 15.4743C9.6897 15.6581 9.9381 15.7078 10.1219 15.5852L15.0008 12.3326C15.0447 12.3033 15.0824 12.2656 15.1117 12.2217C15.2343 12.0379 15.1846 11.7895 15.0008 11.667Z"></path></svg>
+     </div>
+     <div>
+<span>Video & Motion Graphics</span>
+     </div>
+    </div>
+    <div class="swiper-slide flex items-center text-black gap-3">
+     <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM15.0008 11.667L10.1219 8.41435C10.0562 8.37054 9.979 8.34717 9.9 8.34717C9.6791 8.34717 9.5 8.52625 9.5 8.74717V15.2524C9.5 15.3314 9.5234 15.4086 9.5672 15.4743C9.6897 15.6581 9.9381 15.7078 10.1219 15.5852L15.0008 12.3326C15.0447 12.3033 15.0824 12.2656 15.1117 12.2217C15.2343 12.0379 15.1846 11.7895 15.0008 11.667Z"></path></svg>
+     </div>
+     <div>
+<span>Video & Motion Graphics</span>
+     </div>
+    </div>
+    <div class="swiper-slide flex items-center text-black gap-3">
+     <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM15.0008 11.667L10.1219 8.41435C10.0562 8.37054 9.979 8.34717 9.9 8.34717C9.6791 8.34717 9.5 8.52625 9.5 8.74717V15.2524C9.5 15.3314 9.5234 15.4086 9.5672 15.4743C9.6897 15.6581 9.9381 15.7078 10.1219 15.5852L15.0008 12.3326C15.0447 12.3033 15.0824 12.2656 15.1117 12.2217C15.2343 12.0379 15.1846 11.7895 15.0008 11.667Z"></path></svg>
+     </div>
+     <div>
+<span>Video & Motion Graphics</span>
+     </div>
+    </div>
+    <div class="swiper-slide flex items-center text-black gap-3">
+     <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM15.0008 11.667L10.1219 8.41435C10.0562 8.37054 9.979 8.34717 9.9 8.34717C9.6791 8.34717 9.5 8.52625 9.5 8.74717V15.2524C9.5 15.3314 9.5234 15.4086 9.5672 15.4743C9.6897 15.6581 9.9381 15.7078 10.1219 15.5852L15.0008 12.3326C15.0447 12.3033 15.0824 12.2656 15.1117 12.2217C15.2343 12.0379 15.1846 11.7895 15.0008 11.667Z"></path></svg>
+     </div>
+     <div>
+<span>Video & Motion Graphics</span>
+     </div>
+    </div>
+    <div class="swiper-slide flex items-center text-black gap-3">
+     <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 2L21 7V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918C3 2.44405 3.44495 2 3.9934 2H16ZM15.0008 11.667L10.1219 8.41435C10.0562 8.37054 9.979 8.34717 9.9 8.34717C9.6791 8.34717 9.5 8.52625 9.5 8.74717V15.2524C9.5 15.3314 9.5234 15.4086 9.5672 15.4743C9.6897 15.6581 9.9381 15.7078 10.1219 15.5852L15.0008 12.3326C15.0447 12.3033 15.0824 12.2656 15.1117 12.2217C15.2343 12.0379 15.1846 11.7895 15.0008 11.667Z"></path></svg>
+     </div>
+     <div>
+<span>Video & Motion Graphics</span>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+            </div>
+
+
+            
+
+
+
+
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
 
 
     </div>
 
-    
-    
+
+
 
   </section>
 

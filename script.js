@@ -93,3 +93,28 @@ document.querySelectorAll('.icon-container').forEach(container => {
         svg.classList.add('bounce-reverse');
     });
 });
+
+
+// Image Swiper
+new Swiper('.swiper-images', {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 20,
+  speed: 6000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+});
+
+// Text Swiper
+new Swiper('.swiper-text', {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  speed: 6000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+});
