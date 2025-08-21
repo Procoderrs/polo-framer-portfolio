@@ -105,6 +105,7 @@
 --breakpoint-425:26.563rem; /* 425 */
 --breakpoint-before-lg:56.875rem; /* 910px */
 --breakpoint-1300px:81.25rem; /* 1300px */
+--breakpoint-after-lg:62rem; /* 992px */
 
 
 
@@ -170,7 +171,7 @@
 }
 
 
-.swiper {
+ .swiper {
   -webkit-mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0) 0%,
@@ -190,4 +191,30 @@
   );
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
+}
+ 
+
+ /* On very small screens (max-width 320px) */
+@media (max-width: 320px) {
+  .swiper {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(0, 0, 0) 20%,   /* shrink visible area */
+      rgb(0, 0, 0) 80%, 
+      rgba(0, 0, 0, 0) 100%
+    );
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(0, 0, 0) 20%,
+      rgb(0, 0, 0) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+  }
 }

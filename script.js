@@ -95,26 +95,39 @@ document.querySelectorAll('.icon-container').forEach(container => {
 });
 
 
-// Image Swiper
-new Swiper('.swiper-images', {
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 20,
-  speed: 6000,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#image-carousel', {
+    type   : 'loop',
+    perPage: 2,
+    gap    : '1rem',
+    pagination: false,
+    arrows: false,
+    pauseOnHover: false,
+    autoScroll: {
+      speed: 4,   // smaller = slower, bigger = faster
+    },
+    breakpoints: {
+      1024: { perPage: 3 },
+      768 : { perPage: 3 },
+    },
+  }).mount(window.splide.Extensions);
+
+  new Splide('#text-carousel', {
+    type   : 'loop',
+    perPage: 3,
+    gap    : '1rem',
+    pagination: false,
+    arrows: false,
+    pauseOnHover: false,
+    autoScroll: {
+      speed: 4,   // same speed as image
+    },
+    breakpoints: {
+      768: { perPage: 3 },
+      480: { perPage: 3 },
+    },
+  }).mount(window.splide.Extensions);
 });
 
-// Text Swiper
-new Swiper('.swiper-text', {
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 10,
-  speed: 6000,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-});
+
+
